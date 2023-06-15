@@ -1,0 +1,35 @@
+campaign
+-
+cf_id integer
+"contact_id" integer FK >- contacts.contact_id
+"company_name" varchar
+"description" varchar
+"goal" decimal
+"pledged" decimal
+"outcome" varchar
+"backers_count" integer
+"country" varchar
+"currency" varchar
+"launch_date" date
+"end_date" date
+"category_id" varchar FK >- category.category_id
+"subcategory_id" varchar FK >- subcategory.subcategory_id
+
+
+
+contacts
+- 
+"contact_id" integer PK
+"first_name" varchar
+"last_name" varchar
+"email" varchar
+
+category
+- 
+category_id varchar PK
+category varchar
+
+subcategory
+- 
+subcategory_id varchar PK
+subcategory varchar
